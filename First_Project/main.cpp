@@ -7,6 +7,7 @@
 #include <iostream>
 
 using namespace std;
+
 const float taxRate
 {
     0.40
@@ -17,7 +18,7 @@ const double pricePerSmallRoom
 };
 const double pricePerLargeRoom
 {
-    45
+    48
 };
 
 int main()
