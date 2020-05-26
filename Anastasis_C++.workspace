@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Anastasis_C++" Database="" Version="10.0.0">
+  <Project Name="First_Project" Path="First_Project/First_Project.project" Active="No"/>
+  <Project Name="FavoriteNumber" Path="FavoriteNumber/FavoriteNumber.project" Active="Yes"/>
+  <Project Name="SizeOfVariablesOnYourPC" Path="SizeOfVariablesOnYourPC/SizeOfVariablesOnYourPC.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="First_Project" ConfigName="Debug"/>
+      <Project Name="FavoriteNumber" ConfigName="Debug"/>
+      <Project Name="SizeOfVariablesOnYourPC" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="First_Project" ConfigName="Release"/>
+      <Project Name="FavoriteNumber" ConfigName="Release"/>
+      <Project Name="SizeOfVariablesOnYourPC" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
