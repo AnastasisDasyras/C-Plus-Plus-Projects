@@ -9,15 +9,15 @@
 using namespace std;
 const float taxRate
 {
-    0.35
+    0.40
 };
 const double pricePerSmallRoom
 {
-    30
+    27
 };
 const double pricePerLargeRoom
 {
-    50
+    45
 };
 
 int main()
