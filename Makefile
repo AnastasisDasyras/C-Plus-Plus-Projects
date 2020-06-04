@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ DaCipher - Debug ]----------"
-	@cd "DaCipher" && "$(MAKE)" -f  "DaCipher.mk"
+	@echo "----------Building project:[ LoopsEverywhere - Debug ]----------"
+	@cd "LoopsEverywhere" && "$(MAKE)" -f  "LoopsEverywhere.mk"
 clean:
-	@echo "----------Cleaning project:[ DaCipher - Debug ]----------"
-	@cd "DaCipher" && "$(MAKE)" -f  "DaCipher.mk" clean
+	@echo "----------Cleaning project:[ LoopsEverywhere - Debug ]----------"
+	@cd "LoopsEverywhere" && "$(MAKE)" -f  "LoopsEverywhere.mk" clean

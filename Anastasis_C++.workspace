@@ -6,8 +6,8 @@
   <Project Name="MeasurementsConversion" Path="MeasurementsConversion/MeasurementsConversion.project" Active="No"/>
   <Project Name="Arrays_Vectors" Path="Arrays_Vectors/Arrays_Vectors.project" Active="No"/>
   <Project Name="ShippingCostCalculator" Path="ShippingCostCalculator/ShippingCostCalculator.project" Active="No"/>
-  <Project Name="LoopsEverywhere" Path="LoopsEverywhere/LoopsEverywhere.project" Active="No"/>
-  <Project Name="DaCipher" Path="DaCipher/DaCipher.project" Active="Yes"/>
+  <Project Name="LoopsEverywhere" Path="LoopsEverywhere/LoopsEverywhere.project" Active="Yes"/>
+  <Project Name="DaCipher" Path="DaCipher/DaCipher.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

@@ -3,15 +3,19 @@
 #include <vector>
 #include <bits/stdc++.h>
 
-
 const int MODULO
 {
     26
 };
 
-int modInverse(int a, int m);
-
 using namespace std;
+
+//Function Prototype - default values in arguments in the end! ex. int modInverse(int a, int m=10);
+//Info: Pass a reference in a function with & ex. int modInverse(int &a);
+//Info: Pass a reference in a function with & but read only(const) ex. int modInverse(const int &a);
+//Info: A static variable keeps its values between function calls. Is like a global var with local visibility!
+
+int modInverse(int a, int m);
 
 int main()
 {
@@ -27,8 +31,6 @@ int main()
     //Break string into chars 
     char charArray[plainText.length() + 1];
     strcpy(charArray, plainText.c_str());
-    
-    
     
     //Encryption
     for (auto let : plainText) {
