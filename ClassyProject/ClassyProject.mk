@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Αναστάσης Δασύρας
-Date                   :=22/06/2020
+Date                   :=16/07/2020
 CodeLitePath           :="/Users/anastasesdasyras/Library/Application Support/codelite"
 LinkerName             :=g++
 SharedObjectLinkerName :=g++ -dynamiclib -fPIC
@@ -60,7 +60,7 @@ AS       := as
 ## User defined environment variables
 ##
 CodeLiteDir:=/private/var/folders/rg/z7vd7p3s5bs0n4js1xp_4t3m0000gn/T/AppTranslocation/ABD28302-0CD6-4CFC-ABD9-08521A7711CF/d/codelite.app/Contents/SharedSupport/
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Account.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) 
 
 
 
@@ -91,6 +91,14 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix): Movies.cpp $(IntermediateDirectory)/Movies.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/anastasesdasyras/C-Plus-Plus-Projects/ClassyProject/Movies.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Movies.cpp$(DependSuffix): Movies.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Movies.cpp$(DependSuffix) -MM Movies.cpp
+
+$(IntermediateDirectory)/Movies.cpp$(PreprocessSuffix): Movies.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Movies.cpp$(PreprocessSuffix) Movies.cpp
+
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/anastasesdasyras/C-Plus-Plus-Projects/ClassyProject/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
@@ -99,13 +107,13 @@ $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
-$(IntermediateDirectory)/Account.cpp$(ObjectSuffix): Account.cpp $(IntermediateDirectory)/Account.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/anastasesdasyras/C-Plus-Plus-Projects/ClassyProject/Account.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Account.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Account.cpp$(DependSuffix): Account.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Account.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Account.cpp$(DependSuffix) -MM Account.cpp
+$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix): Movie.cpp $(IntermediateDirectory)/Movie.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/anastasesdasyras/C-Plus-Plus-Projects/ClassyProject/Movie.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Movie.cpp$(DependSuffix): Movie.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Movie.cpp$(DependSuffix) -MM Movie.cpp
 
-$(IntermediateDirectory)/Account.cpp$(PreprocessSuffix): Account.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Account.cpp$(PreprocessSuffix) Account.cpp
+$(IntermediateDirectory)/Movie.cpp$(PreprocessSuffix): Movie.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Movie.cpp$(PreprocessSuffix) Movie.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/Account.cpp.o
+./Debug/Movies.cpp.o ./Debug/main.cpp.o ./Debug/Movie.cpp.o

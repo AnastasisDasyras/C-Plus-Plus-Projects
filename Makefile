@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ LoopsEverywhere - Debug ]----------"
-	@cd "LoopsEverywhere" && "$(MAKE)" -f  "LoopsEverywhere.mk"
+	@echo "----------Building project:[ ClassyProject - Debug ]----------"
+	@cd "ClassyProject" && "$(MAKE)" -f  "ClassyProject.mk"
 clean:
-	@echo "----------Cleaning project:[ LoopsEverywhere - Debug ]----------"
-	@cd "LoopsEverywhere" && "$(MAKE)" -f  "LoopsEverywhere.mk" clean
+	@echo "----------Cleaning project:[ ClassyProject - Debug ]----------"
+	@cd "ClassyProject" && "$(MAKE)" -f  "ClassyProject.mk" clean

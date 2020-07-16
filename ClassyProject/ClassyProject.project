@@ -23,7 +23,7 @@
       <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
       </Environment>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="yes">
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
         <DebuggerSearchPaths/>
         <PostConnectCommands/>
         <StartupCommands/>
@@ -63,7 +63,7 @@
       <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
       </Environment>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="yes">
         <DebuggerSearchPaths/>
         <PostConnectCommands/>
         <StartupCommands/>
@@ -93,8 +93,10 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="Account.cpp"/>
-    <File Name="Account.h"/>
+    <File Name="Movies.cpp"/>
+    <File Name="Movies.h"/>
+    <File Name="Movie.cpp"/>
+    <File Name="Movie.h"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

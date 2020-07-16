@@ -1,3 +1,5 @@
-./Debug/main.cpp.o: main.cpp Account.h
+./Debug/main.cpp.o: main.cpp Movie.h Movies.h
 
-Account.h:
+Movie.h:
+
+Movies.h:

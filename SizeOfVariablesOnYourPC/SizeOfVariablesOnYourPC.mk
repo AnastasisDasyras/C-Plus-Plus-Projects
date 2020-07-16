@@ -5,22 +5,22 @@
 ## Debug
 ProjectName            :=SizeOfVariablesOnYourPC
 ConfigurationName      :=Debug
-WorkspacePath          :=/home/anastasis/Documents/Anastasis_C++
-ProjectPath            :=/home/anastasis/Documents/Anastasis_C++/SizeOfVariablesOnYourPC
+WorkspacePath          :=/Users/anastasesdasyras/C-Plus-Plus-Projects
+ProjectPath            :=/Users/anastasesdasyras/C-Plus-Plus-Projects/SizeOfVariablesOnYourPC
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Anastasis
-Date                   :=26/05/20
-CodeLitePath           :=/home/anastasis/.codelite
-LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+User                   :=Αναστάσης Δασύρας
+Date                   :=15/07/2020
+CodeLitePath           :="/Users/anastasesdasyras/Library/Application Support/codelite"
+LinkerName             :=g++
+SharedObjectLinkerName :=g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.i
-DebugSwitch            :=-g 
+PreprocessSuffix       :=.o.i
+DebugSwitch            :=-gstab
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -31,7 +31,7 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E
+PreprocessOnlySwitch   :=-E 
 ObjectsFileList        :="SizeOfVariablesOnYourPC.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
@@ -47,19 +47,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := /usr/bin/ar rcu
-CXX      := /usr/bin/g++
-CC       := /usr/bin/gcc
+AR       := ar rcus
+CXX      := g++
+CC       := gcc
 CXXFLAGS := -std=c++14 -Wall -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := /usr/bin/as
+AS       := as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
+CodeLiteDir:=/private/var/folders/rg/z7vd7p3s5bs0n4js1xp_4t3m0000gn/T/AppTranslocation/ABD28302-0CD6-4CFC-ABD9-08521A7711CF/d/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/anastasis/Documents/Anastasis_C++/SizeOfVariablesOnYourPC/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/anastasesdasyras/C-Plus-Plus-Projects/SizeOfVariablesOnYourPC/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 

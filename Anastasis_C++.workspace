@@ -6,8 +6,11 @@
   <Project Name="MeasurementsConversion" Path="MeasurementsConversion/MeasurementsConversion.project" Active="No"/>
   <Project Name="Arrays_Vectors" Path="Arrays_Vectors/Arrays_Vectors.project" Active="No"/>
   <Project Name="ShippingCostCalculator" Path="ShippingCostCalculator/ShippingCostCalculator.project" Active="No"/>
-  <Project Name="LoopsEverywhere" Path="LoopsEverywhere/LoopsEverywhere.project" Active="Yes"/>
+  <Project Name="LoopsEverywhere" Path="LoopsEverywhere/LoopsEverywhere.project" Active="No"/>
   <Project Name="DaCipher" Path="DaCipher/DaCipher.project" Active="No"/>
+  <Project Name="PointerThatArray" Path="PointerThat/PointerThat.project" Active="No"/>
+  <Project Name="TestProject" Path="TestProject/TestProject.project" Active="No"/>
+  <Project Name="ClassyProject" Path="ClassyProject/ClassyProject.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -19,6 +22,9 @@
       <Project Name="ShippingCostCalculator" ConfigName="Debug"/>
       <Project Name="LoopsEverywhere" ConfigName="Debug"/>
       <Project Name="DaCipher" ConfigName="Debug"/>
+      <Project Name="PointerThatArray" ConfigName="Debug"/>
+      <Project Name="TestProject" ConfigName="Debug"/>
+      <Project Name="ClassyProject" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -30,6 +36,9 @@
       <Project Name="ShippingCostCalculator" ConfigName="Release"/>
       <Project Name="LoopsEverywhere" ConfigName="Release"/>
       <Project Name="DaCipher" ConfigName="Release"/>
+      <Project Name="PointerThatArray" ConfigName="Release"/>
+      <Project Name="TestProject" ConfigName="Release"/>
+      <Project Name="ClassyProject" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
